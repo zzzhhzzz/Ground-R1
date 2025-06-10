@@ -1,4 +1,4 @@
-<p align="center" width="100%">
+<p align="center" width="80%">
 </p>
 <h2 align="center"> <a href="https://arxiv.org/abs/2505.20272">Ground-R1: Incentivizing Grounded Visual Reasoning via Reinforcement Learning</a></h2>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
