@@ -3,6 +3,7 @@
 <h2 align="center"> <a href="https://arxiv.org/abs/2505.20272">Ground-R1: Incentivizing Grounded Visual Reasoning via Reinforcement Learning</a></h2>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
 <h5 align=center>
+
 [![hf](https://img.shields.io/badge/🤗-Hugging%20Face-blue.svg)](https://huggingface.co/datasets/ZHZ2002/Ground-R1)
 [![arXiv](https://img.shields.io/badge/Arxiv-2505.20272-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2505.20272)
 [![License](https://img.shields.io/badge/Code%20License-Apache2.0-yellow)](https://github.com/PhysGame/PhysGame/blob/main/LICENSE)
