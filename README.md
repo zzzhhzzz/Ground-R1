@@ -131,7 +131,9 @@ bash eval/multi_RefCOCO.sh
 
 SFT Training:
 
-Please add your dataset path (VisCoT) to `qwen-vl-finetune/scripts/prepare_SFT_data.sh`, then,
+1) Download `Vanilla_SFT.json` and `Ground_SFT.json` from [repo](https://huggingface.co/datasets/ZHZ2002/Ground-R1/tree/main/SFT) then put them to `qwen-vl-finetune\qwenvl\data`
+
+2) Please add your dataset path (VisCoT) to `qwen-vl-finetune/scripts/prepare_SFT_data.sh`, then,
 
 ```bash
 cd Ground-R1
