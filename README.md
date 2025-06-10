@@ -3,14 +3,17 @@
 <h2 align="center"> <a href="https://arxiv.org/abs/2505.20272">Ground-R1: Incentivizing Grounded Visual Reasoning via Reinforcement Learning</a></h2>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
 <h5 align=center>
-
-[![hf](https://img.shields.io/badge/🤗-Hugging%20Face-blue.svg)](https://huggingface.co/PhysGame)
+[![hf](https://img.shields.io/badge/🤗-Hugging%20Face-blue.svg)](https://huggingface.co/datasets/ZHZ2002/Ground-R1)
 [![arXiv](https://img.shields.io/badge/Arxiv-2505.20272-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2505.20272)
 [![License](https://img.shields.io/badge/Code%20License-Apache2.0-yellow)](https://github.com/PhysGame/PhysGame/blob/main/LICENSE)
 
 <!-- 
 <font size=7><div align='center' > [[📖 arXiv Paper](https://arxiv.org/abs/2505.20272)] [[📊 Dataset](https://github.com/BradyFU/Video-MME?tab=readme-ov-file#-dataset)][[🏆 Leaderboard](https://huggingface.co/PhysGame)]  </div></font>
 -->
+
+<p align="center">
+    <img src="./asset/teaser01.png" width="120%" height="120%">
+</p>
 
 ## Latest Updates :loudspeaker:
 
@@ -25,11 +28,10 @@ Large Vision-Language Models (LVLMs) have demonstrated impressive general capabi
 * Ground-R1 decouples evidence region generation from answer synthesis, enabling interpretable reasoning via format-constrained grounding and reward-driven response generation.
 * Extensive experiments across multiple benchmarks demonstrate that Ground-R1 achieves superior performance and exhibits emergent cognitive behaviors such as uncertainty awareness, spatial perception and iterative refinement.
 
-
 ## Reasoning trajectories of Ground-R1 🔥
 
 <p align="center">
-    <img src="./asset/teaser01.png" width="120%" height="120%">
+    <img src="./asset/teaser03.png" width="120%" height="120%">
 </p>
 
 <div align='center' >
@@ -37,7 +39,6 @@ Large Vision-Language Models (LVLMs) have demonstrated impressive general capabi
 <summary> Click to expand more examples</summary>
 <p align="center">
     <img src="./asset/teaser02.png" width="110%" height="110%">
-    <img src="./asset/teaser03.png" width="100%" height="100%">
     <img src="./asset/teaser04.png" width="100%" height="100%">
     <img src="./asset/teaser05.png" width="100%" height="100%">
     <img src="./asset/teaser06.png" width="100%" height="100%">
