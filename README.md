@@ -1,4 +1,4 @@
-<p align="center" width="80%">
+<p align="center" width="100%">
 </p>
 <h2 align="center"> <a href="https://arxiv.org/abs/2505.20272">Ground-R1: Incentivizing Grounded Visual Reasoning via Reinforcement Learning</a></h2>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
@@ -92,7 +92,7 @@ conda activate ground-r1
 bash setup.sh
 ```
 
-Please download and unzip [VisCoT dataset](https://huggingface.co/datasets/deepcs233/Visual-CoT) for training and evaluation. Download and unzip [LVLM benchmarks](https://huggingface.co/datasets/ZHZ2002/Ground_R1_General_Eval) and [RefCOCO](https://huggingface.co/datasets/ZHZ2002/RefCOCO_ALL_Eval) for evaluation.
+Please download and unzip [Visual-CoT dataset](https://huggingface.co/datasets/ZHZ2002/Ground-R1) for training and evaluation. Download and unzip [LVLM benchmarks](https://huggingface.co/datasets/ZHZ2002/Ground_R1_General_Eval) and [RefCOCO](https://huggingface.co/datasets/ZHZ2002/RefCOCO_ALL_Eval) for evaluation.
 
 ## Training 🚀
 
