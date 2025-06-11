@@ -137,8 +137,8 @@ def extract_answer_videor1(text):
         if match2:
             return match2.group(1).strip()
         else:
-            return ""
-            # return text.strip()   ### For only answer no think format
+            # return ""
+            return text.strip()   ### For only answer no think format
 
 def ocr_and_freeform(content, ground_truth, dataset):
 

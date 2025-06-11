@@ -806,7 +806,7 @@ class Qwen2VLGRPOTrainer(Trainer):
                 for example in inputs:
                     score_kwargs[key].extend([example[key]] * self.num_generations)
             # output_score_func = score_func(prompts=prompts, completions=completions, crop_bbox_to_cal_iou_stage1=crop_bbox_to_cal_iou_stage1, crop_bbox_to_cal_iou_stage2=crop_bbox_to_cal_iou_stage2, **score_kwargs)
-            output_score_func = reward_func(prompts=prompts, completions=completions, **reward_kwargs)
+            output_score_func = score_func(prompts=prompts, completions=completions, **reward_kwargs)
             scores_per_func[:, i] = torch.tensor(output_score_func, dtype=torch.float32, device=device)
 
         # Sum the rewards from all reward functions
