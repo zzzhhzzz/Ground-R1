@@ -126,7 +126,7 @@ class GRPOScriptArguments(ScriptArguments):
     )
     score_funcs: list[str] = field(
         # default_factory=lambda: ["bbox_stage1", "bbox_stage2", "accuracy_stage1", "accuracy_stage2", "bbox_iou_stage1", "bbox_iou_stage2", "bbox_iou_stage3"],
-        default_factory=lambda: ["accuracy_reward_stage2"],
+        default_factory=lambda: ["refine_times"],
     )
 
     max_pixels: Optional[int] = field(
@@ -287,6 +287,14 @@ def format_reward_all_stage(completions, **kwargs):
 
     return total_format_rewards
 
+def refine_times(completions, **kwargs):
+
+    refine_times = []
+
+    for completion in completions:
+        refine_times.append(len(completion))
+
+    return refine_times
 
 # def bbox_reward(completions, bboxs, width, height, **kwargs):
 def bbox_reward_stage2(crop_bbox_to_cal_iou_stage2, bboxs, problem_id, image, dataset, **kwargs):
@@ -455,7 +463,8 @@ log_score_funcs_regitry = {
     # "bbox_stage2": bbox_score_stage2,
     # "accuracy_stage2": accuracy_score_stage2,
     # "bbox_score_stage1": bbox_score_stage1,
-    "accuracy_reward_stage2": accuracy_reward_stage2,
+    # "accuracy_reward_stage2": accuracy_reward_stage2,
+    "refine_times": refine_times,
     # "bbox_score_stage2": bbox_reward_stage2,
     # "bbox_iou_stage1": bbox_iou_stage1,
     # "bbox_iou_stage2": bbox_iou_stage2,

@@ -64,7 +64,7 @@ if is_wandb_available():
 # What we call a reward function is a callable that takes a list of prompts and completions and returns a list of
 # rewards. When it's a string, it's a model ID, so it's loaded as a pretrained model.
 RewardFunc = Union[str, PreTrainedModel, Callable[[list, list], list[float]]]
-ScoreFunc = Union[str, PreTrainedModel, Callable[[list, list, list, list, list], list[float]]]
+ScoreFunc = Union[str, PreTrainedModel, Callable[[list], list[float]]]
 
 STAGE_ONE_TEMPLATE = (
     "Question: {Question}\n"
