@@ -91,8 +91,10 @@ def Math_eureka(content, ground_truth):
             except Exception:
                 pass
     else:
-        reward = 1.0
-        print("Failed to parse gold solution: ", ground_truth)
+        if ground_truth == answer_parsed:
+            reward = 1.0
+        else:
+            reward = 0.0
 
     return reward, answer_parsed
 
@@ -195,12 +197,15 @@ def deepeyes_visual_toolbox(content, ground_truth):
         scores = scorer.score(reference, hypothesis)
         average_fmeasure = (scores['rouge1'].fmeasure + scores['rouge2'].fmeasure + scores['rougeL'].fmeasure) / 3
         return average_fmeasure
-    
+
     try:
         student_answer = extract_answer_videor1(content)
+        match = re.match(r"^\s*([A-D])[\W\s]", student_answer)
         if "yes" in ground_truth.split()[0].lower() and student_answer.split()[0].lower() == "yes":
             reward = 1.0
         elif "no" in ground_truth.split()[0].lower() and student_answer.split()[0].lower() == "no":
+            reward = 1.0
+        elif match and match.group(1) == ground_truth:
             reward = 1.0
         else:
             score = compute_rouge_score(ground_truth.lower(), student_answer.lower())
