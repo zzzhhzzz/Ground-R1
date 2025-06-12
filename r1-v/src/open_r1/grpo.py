@@ -22,7 +22,7 @@ from datasets import load_dataset, load_from_disk
 from transformers import Qwen2VLForConditionalGeneration
 
 from math_verify import parse, verify
-from trainer import Qwen2VLGRPOTrainer, Qwen2VLGRPOVLLMTrainer, Qwen2VLGRPOTrainerNoKL
+from trainer import Qwen2VLGRPOTrainer
 from trl import GRPOConfig, GRPOTrainer, ModelConfig, ScriptArguments, TrlParser, get_peft_config
 from transformers.trainer_utils import get_last_checkpoint
 from datasets import Dataset, DatasetDict
@@ -534,11 +534,7 @@ def main(script_args, training_args, model_args):
         dataset = dataset.map(make_conversation)
         dataset = dataset.remove_columns("messages")
 
-    # import pdb
-    # pdb.set_trace()
-    
-    # trainer_cls = Qwen2VLGRPOTrainerNoKL if not training_args.use_vllm else Qwen2VLGRPOVLLMTrainer
-    trainer_cls = Qwen2VLGRPOTrainer if not training_args.use_vllm else Qwen2VLGRPOVLLMTrainer
+    trainer_cls = Qwen2VLGRPOTrainer
     print("using: ", trainer_cls)
 
     if os.path.isdir("/home/meng/GRPO/src/outputs/datav3_simple_qdwqdnobbox_reward_twostageT_KL/checkpoint-500"):
