@@ -29,42 +29,34 @@ Large Vision-Language Models (LVLMs) have demonstrated impressive general capabi
 
 ## Reasoning trajectories of Ground-R1 🔥
 
-<p align="center">
-    <img src="./asset/teaser03.png" width="120%" height="120%">
-</p>
+<img src="./asset/teaser03.png" style="zoom:80%;" />
 
 <div align='center' >
 <details>
 <summary> Click to expand more examples</summary>
 <p align="center">
-    <img src="./asset/teaser02.png" width="110%" height="110%">
-    <img src="./asset/teaser04.png" width="100%" height="100%">
-    <img src="./asset/teaser05.png" width="100%" height="100%">
-    <img src="./asset/teaser06.png" width="100%" height="100%">
+    <img src="./asset/teaser02.png" style="zoom:80%;" />
+    <img src="./asset/teaser04.png" style="zoom:80%;" />
+    <img src="./asset/teaser05.png" style="zoom:80%;" />
+    <img src="./asset/teaser06.png" style="zoom:80%;" />
 </details>
 </div>
 
 ## Performance 🏆
 
-<p align="center">
-    <img src="./asset/VisCoT.png" width="100%" height="100%">
-</p>
+<img src="./asset/VisCoT.png" style="zoom:80%;" />
 
 Evaluation results on the test split of [VisCoT benchmark](https://github.com/deepcs233/Visual-CoT?tab=readme-ov-file#model_zoo) including **doc/text** and **chart** understanding and **general VQA**, **relation reasoning**, and **fine-grained VQA (FGVQA)**.
 
 Ground-R1 demonstrates substantial performance advantages over contemporary approaches: 1) Ground-R1 outperforms the baseline model [Qwen2.5-VL-7B](https://github.com/QwenLM/Qwen2.5-VL?tab=readme-ov-file) by $9.2\%$ on the average accuracy; 2) Compared to the recent grounded visual reasoning approach [CogCoM](https://github.com/THUDM/CogCoM), it achieves absolute improvements of $+24.2\%$ on TextVQA  and $+21.0\%$ on GQA; 3) Further more, our **Ground-R1** surpasses recent R1-series works (e.g., [R1-Onevision](https://github.com/Fancy-MLLM/R1-Onevision), [Vision-R1-7B](https://github.com/Osilly/Vision-R1) and [LMM-R1](https://github.com/TideDra/lmm-r1), empirically validating that introducing evidence grounding during reasoning processes effectively enhances multi-modal task-solving capabilities.
 
-<p align="center">
-    <img src="./asset/general.png" width="100%" height="100%">
-</p>
+<img src="./asset/general.png" style="zoom:80%;" />
 
 To ensure comprehensive evaluation, we conduct systematic benchmarking across established LVLM benchmarks including **MME**, **MM-Vet**, **SEED-Bench**, **MME-RealWorld-Lite** (MME-RWL) , and **RealworldQA** for general capability evaluation and **POPE** for hallucination validation.
 
 Ground-R1 demonstrates significant advantages over the baseline ([Qwen2.5-VL-7B](https://github.com/QwenLM/Qwen2.5-VL?tab=readme-ov-file)), existing grounded reasoning approaches ([CogCoM](https://github.com/THUDM/CogCoM), [Sys2-LLaVA](https://github.com/GuangyanS/Sys2-LLaVA), [VisCoT](https://github.com/deepcs233/Visual-CoT?tab=readme-ov-file#model_zoo)), and R1-series methods ([R1-Onevision](https://github.com/Fancy-MLLM/R1-Onevision), [Vision-R1-7B](https://github.com/Osilly/Vision-R1), [LMM-R1](https://github.com/TideDra/lmm-r1)). For instance, on the MME benchmark, **Ground-R1** achieves performance improvements of $33.9$ and $54.7$ points compared to Qwen2.5-VL-7B and Vision-R1-7B, respectively.
 
-<p align="center">
-    <img src="./asset/refcoco.png" width="100%" height="100%">
-</p>
+<img src="./asset/refcoco.png" style="zoom:80%;" />
 
 Besides, We evaluate the visual grounding capabilities of Ground-R1 on **RefCOCO**, **RefCOCO+** and **RefCOCOg**.
 
@@ -72,9 +64,7 @@ Ground-R1 demonstrates superior visual grounding capabilities, achieving $92.9\%
 
 ## RL Training Curves 📈
 
-<p align="center">
-    <img src="./asset/Training_curves.png" width="100%" height="100%">
-</p>
+<img src="./asset/Training_curves.png" style="zoom:80%;" />
 
 As shown, the format reward converges rapidly during the early training stages, while the accuracy reward stabilizes after approximately 600 steps. Additionally, the response length gradually increases with training steps, indicating the emergence of longer reasoning chains. 
 
