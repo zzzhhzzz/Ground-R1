@@ -12,7 +12,7 @@
 <font size=7><div align='center' > [[📖 arXiv Paper](https://arxiv.org/abs/2505.20272)] [[📊 Dataset](https://github.com/BradyFU/Video-MME?tab=readme-ov-file#-dataset)][[🏆 Leaderboard](https://huggingface.co/PhysGame)]  </div></font>
 -->
 
-<img src="./asset/teaser01.png" width="120%" height="120%">
+<img src="./asset/teaser01.png" style="zoom:80%;" />
 
 ## Latest Updates :loudspeaker:
 
